@@ -94,7 +94,7 @@
       const chatButton = document.getElementById("chatButton");
       const musicButton = document.getElementById("musicButton");
       const bgMusic = document.getElementById("bgMusic");
-    
+
       let noClickCount = 0;
       let buttonHeight = 48;
       let buttonWidth = 80;
@@ -108,10 +108,10 @@
         "./images/image6.gif",
         "./images/image7.gif",
       ];
-    
+
       // Biar tombol play music langsung muncul
       musicButton.classList.remove("hidden");
-    
+
       musicButton.addEventListener("click", () => {
         if (bgMusic.paused) {
           bgMusic.play();
@@ -121,7 +121,7 @@
           musicButton.textContent = "Play Music";
         }
       });
-    
+
       noButton.addEventListener("click", function () {
         if (noClickCount < 5) {
           noClickCount++;
@@ -136,7 +136,7 @@
             noButton.textContent = [
               "No",
               "Are you sure?",
-              "Pookie please",
+              "Ami please",
               "Don't do this to me :(",
               "You're breaking my heart",
               "I'm gonna cry...",
@@ -144,16 +144,18 @@
           }
         }
       });
-    
+
       yesButton.addEventListener("click", () => {
         imageDisplay.src = "./images/image7.gif";
-        valentineQuestion.textContent = "Yayyy!! :3";
+        valentineQuestion.textContent = "Yayyy!! :3 i love youu amii<3";
         responseButtons.style.display = "none";
         chatButton.classList.remove("hidden");
         confetti();
       });
     </script>
+    <footer class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-gray-600 text-sm">
+      Made with ❤️ by sideoftuesday
+    </footer>
     
-
   </body>
 </html>
